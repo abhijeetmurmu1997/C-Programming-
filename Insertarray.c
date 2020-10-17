@@ -12,11 +12,11 @@ int main()
 	scanf("%d",&key);
 	printf("enter location of the array to be inserted:");
 	scanf("%d",&loc);
-	for(i=n-1;i>=loc;i--)
+	for(i=n-1;i>=loc-1;i--)
 	{
 		arr[i+1] = arr[i];
 	}
-	arr[loc]=key;
+	arr[loc-1]=key;
 	n++;
 	printf("After insertion, array is:\n");
 	for(i=0;i<n;i++)
